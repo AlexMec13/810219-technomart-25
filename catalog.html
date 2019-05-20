@@ -44,7 +44,26 @@
           <h2>Перфораторы</h2>
           <section class="filters">
                 <p>Фильтр:</p>
-                <!-- Здесь будет форма -->
+                <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+                  <fieldset>
+                    <legend>Производители</legend>
+                    <ul>
+                      <li class="filter-option"><input type="checkbox" name="Bosch" checked>Bosch </li>
+                      <li class="filter-option"><input type="checkbox" name="Интерскол">Интерскол</li>
+                      <li class="filter-option"><input type="checkbox" name="Makita" checked>Makita</li>
+                      <li class="filter-option"><input type="checkbox" name="Dewolt">Dewolt</li>
+                      <li class="filter-option"><input type="checkbox" name="Hitachi">Hitachi</li>
+                    </ul>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Питание</legend>
+                    <ul>
+                        <li class="filter-option"><input type="ratio" value="accumulator" checked>Аккумуляторные</li>
+                        <li class="filter-option"><input type="ratio" value="net">Сетевые</li>
+                    </ul>
+                  </fieldset>
+                  <button class="filter-button">Показать</button>
+                </form>
               </section>
          <section class="catalog">
              <ul class="catalog-list">
