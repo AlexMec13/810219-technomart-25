@@ -5,8 +5,138 @@ body {
 
     background-color: #ffffff;    
 }
-
 a {
     text-decoration: none;
-    
+}
+.main-interactive-bar {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #293349;
+}
+.main-make-order {
+    background-color: #62a63d;
+}
+.main-logo {
+    background-color: #ed3543;
+    text-transform:uppercase;
+}
+.site-navigation {
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+
+    background-color: #293349;
+}
+.user-navigation ul,
+.user-actions ul,
+.site-navigation,
+.delivery-companies-list,
+.footer-site-navigation,
+.footer-offers-navigation,
+.footer-social ul {
+    list-style: none;
+}
+.main-interactive-bar a,
+.site-navigation a,
+.about-company a,
+.contacts a,
+.main-footer a,
+.footer-site-navigation a {
+    color: #ffffff
+}
+.main-footer {
+    background-color: #31415b;
+}
+.footer-side-information {
+    background-color: #293349;
+}
+h1 {
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+
+    color: #EE3643;
+}
+.main-phone {
+    font-size: 21px;
+    line-height: 21px;
+
+    color: #EE3643;
+    border: 3px solid #ffffff;
+}
+.main-adress {
+    width: 270px;
+    height: 17px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #32425C;
+}
+
+.main-logo:hover,
+.main-logo:focus{
+    background-color: #ca2b36;
+}
+.main-logo:active{
+    background-color: #ba2731;
+}
+.main-bookmarks:hover,
+.main-basket:hover{
+    background-color: #212939;
+}
+.main-bookmarks:active,
+.main-basket:active{
+    background-color: #161d29;
+    opacity: 0.6;
+}
+.main-make-order:hover,
+.main-make-order:focus{
+    background-color: #5fbb2d;;
+}
+.main-make-order:active {
+    background-color: #508534;
+    opacity: 0.5;    
+}
+.user-navigation a:hover,
+.user-navigation a:focus{
+    color:#EE3643;
+}
+.user-navigation a:active{
+    color:#000000;
+    opacity:0.3;
+}
+.user-actions a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425C;
+    text-decoration: underline;
+}
+.user-navigation a,
+.user-actions .user-profile-link a{
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+}
+.user-actions a:hover,
+.user-actions a:focus{
+    color:#EE3643;
+}
+.user-actions a:active{
+    color: #32425C;
+    opacity:0.3;
+}
+
+
+.catalog-item a{
+    display:none;
+}
+.write-us-popup {
+    display: none;
+}
+.big-map-popup {
+    display: none;
 }
