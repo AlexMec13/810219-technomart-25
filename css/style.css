@@ -129,6 +129,52 @@ h1 {
     color: #32425C;
     opacity:0.3;
 }
+.footer-site-navigation a{
+    font-size: 18px;
+    line-height: 24px;
+    color: #F1F5F7;
+}
+.footer-site-navigation a:hover,
+.footer-site-navigation a:focus{
+    text-decoration: underline; 
+}
+.footer-site-navigation a:active {
+    opacity:0.5;
+    text-decoration: none;
+}
+.footer-offers-navigation a{
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFD180;
+}
+.footer-offers-navigation a:hover,
+.footer-offers-navigation a:focus{
+    text-decoration: underline;
+}
+.footer-offers-navigation a:active{
+    opacity:0.5;
+    text-decoration: none;
+}
+p .footer-copyright ,
+p .footer-contact {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+}
+.footer-copyright a,
+.footer-contact a{
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFD180;
+}
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+    text-decoration: underline;
+}
+.footer-copyright a:active {
+    color:#EE3643;
+    text-decoration: none;
+}
 
 
 .catalog-item a{
