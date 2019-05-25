@@ -7,27 +7,13 @@ body {
 }
 a {
     text-decoration: none;
-}
-.main-interactive-bar {
-    font-size: 17px;
-    line-height: 18px;
-    color: #ffffff;
 
-    background-color: #293349;
 }
-.main-make-order {
-    background-color: #62a63d;
-}
-.main-logo {
-    background-color: #ed3543;
-    text-transform:uppercase;
-}
-.site-navigation {
-    font-size: 17px;
-    line-height: 17px;
-    color: #ffffff;
-
-    background-color: #293349;
+.main-header{
+    background-color: #ffffff;
+    background-image: url("../img/background-blue.png");
+    background-repeat: repeat;
+   
 }
 .user-navigation ul,
 .user-actions ul,
@@ -35,7 +21,9 @@ a {
 .delivery-companies-list,
 .footer-site-navigation,
 .footer-offers-navigation,
-.footer-social ul {
+.footer-social ul,
+.catalog-navigation ul,
+.filter-form ul {
     list-style: none;
 }
 .main-interactive-bar a,
@@ -46,8 +34,84 @@ a {
 .footer-site-navigation a {
     color: #ffffff
 }
+.main-interactive-bar {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #293349;
+}
+.main-logo {
+    font-size: 17px;
+    line-height: 18px;
+    text-transform:uppercase;
+    
+    background-color: #ed3543;    
+}
+.main-search input{
+    background-color: transparent;
+    border:none;
+}
+.main-interactive-bar form:hover,
+.main-interactive-bar form:focus{
+    background-color: #212a3a;
+}
+.main-bookmarks{
+    font-size: 17px;
+    line-height: 18px;
+}
+.main-basket{
+    font-size: 17px;
+    line-height: 18px;
+}
+.main-make-order {
+    font-size: 17px;
+    line-height: 18px;
+
+    background-color: #62a63d;
+}
+.main-logo:hover,
+.main-logo:focus{
+    background-color: #ca2b36;
+}
+.main-logo:active{
+    background-color: #ba2731;
+}
+.main-bookmarks:hover,
+.main-basket:hover{
+    background-color: #212939;
+}
+.main-bookmarks:active,
+.main-basket:active{
+    background-color: #161d29;
+    opacity: 0.6;
+}
+.main-make-order:hover,
+.main-make-order:focus{
+    background-color: #5fbb2d;;
+}
+.main-make-order:active {
+    background-color: #508534;
+    opacity: 0.5;    
+}
+.site-navigation {
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+
+    background-color: #32425c;
+}
+.site-navigation a:hover,
+.site-navigation a:focus{
+    background-color:#293449;
+}
+.site-navigation a:active{
+    opacity: 0.5;
+    background-color: #1d2739;
+}
+
 .main-footer {
-    background-color: #31415b;
+    background-color: #32425c;
 }
 .footer-side-information {
     background-color: #293349;
@@ -74,31 +138,6 @@ h1 {
     text-align: center;
 
     color: #32425C;
-}
-
-.main-logo:hover,
-.main-logo:focus{
-    background-color: #ca2b36;
-}
-.main-logo:active{
-    background-color: #ba2731;
-}
-.main-bookmarks:hover,
-.main-basket:hover{
-    background-color: #212939;
-}
-.main-bookmarks:active,
-.main-basket:active{
-    background-color: #161d29;
-    opacity: 0.6;
-}
-.main-make-order:hover,
-.main-make-order:focus{
-    background-color: #5fbb2d;;
-}
-.main-make-order:active {
-    background-color: #508534;
-    opacity: 0.5;    
 }
 .user-navigation a:hover,
 .user-navigation a:focus{
@@ -155,8 +194,8 @@ h1 {
     opacity:0.5;
     text-decoration: none;
 }
-p .footer-copyright ,
-p .footer-contact {
+.footer-copyright ,
+.footer-contact {
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
@@ -175,6 +214,49 @@ p .footer-contact {
     color:#EE3643;
     text-decoration: none;
 }
+.footer-company-rights {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+
+}
+
+/* Что касается каталога*/
+.catalog-navigation a{
+    font-family: PTSans, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color:#000000;
+}
+.name-catalog-page{
+    font-size: 16px;
+    line-height: 18px;
+    color:#32425c;
+
+    background-color: #f2f6f8;  
+}
+.filters p{
+    font-size: 13px;
+    line-height: 18px;
+    color:#000000;
+
+    background-color: #f7f3ec;
+}
+.filters legend{
+    font-family: PTSans, sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    color:#000000;
+}
+.filter-form li{
+    font-family: PTSans, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color:#000000;
+}
+
+
+
 
 
 .catalog-item a{
