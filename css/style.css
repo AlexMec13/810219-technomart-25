@@ -70,10 +70,9 @@ a {
 .main-search input::placeholder {
     color: #ffffff;
   }
-  .reg input::-webkit-input-placeholder {color:#ffffff;}
-  .reg input::-moz-placeholder {color:#ffffff;}
-  .reg input:-moz-placeholder {color:#ffffff;}
-  .reg input:-ms-input-placeholder {color:#ffffff;}
+  .main-search input::-webkit-input-placeholder {color:#ffffff;}
+  .main-search input::-moz-placeholder {color:#ffffff; opacity: 1;}
+  .main-search input:-ms-input-placeholder {color:#ffffff;}
 
 .main-interactive-bar a{
     font-size: 17px;
