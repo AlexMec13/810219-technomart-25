@@ -45,31 +45,37 @@ a {
     font-size: 17px;
     line-height: 18px;
     text-transform:uppercase;
-    
-    background-color: #ed3543;    
+
+    width:220px;
+    height: 47px;    
+    background-color: #ed3543;  
+    box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.24)       
 }
 .main-search input{
     background-color: transparent;
     border:none;
 }
-.main-interactive-bar form:hover,
-.main-interactive-bar form:focus{
+.main-search:hover{
     background-color: #212a3a;
 }
-.main-bookmarks{
-    font-size: 17px;
-    line-height: 18px;
-}
-.main-basket{
-    font-size: 17px;
-    line-height: 18px;
-}
-.main-make-order {
-    font-size: 17px;
-    line-height: 18px;
 
-    background-color: #62a63d;
+.main-search input::placeholder {
+    color: #ffffff;
+  }
+  .reg input::-webkit-input-placeholder {color:#ffffff;}
+  .reg input::-moz-placeholder {color:#ffffff;}
+  .reg input:-moz-placeholder {color:#ffffff;}
+  .reg input:-ms-input-placeholder {color:#ffffff;}
+
+.main-interactive-bar a{
+    font-size: 17px;
+    line-height: 18px;
 }
+.main-search input:focus{
+    background-color: #ffffff;
+    outline: none;
+}
+
 .main-logo:hover,
 .main-logo:focus{
     background-color: #ca2b36;
