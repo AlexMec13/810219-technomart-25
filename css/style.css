@@ -44,7 +44,7 @@ a {
     margin: 0 auto 46px auto;
 
     width: 940px;
-    height: 42px;    
+    max-height: 42px;    
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -55,7 +55,8 @@ a {
     text-transform:uppercase;
 
     width:220px;
-    height: 47px;    
+    height: 47px; 
+    vertical-align: middle;   
     background-color: #ed3543;  
     box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.24)       
 }
@@ -117,7 +118,7 @@ a {
     margin: 0 auto;
     width: 940px;
 
-    outline:1px solid yellow;
+    
     
 }
 .site-navigation {
@@ -220,8 +221,6 @@ h1 {
 
     width: 940px;
     margin: 0 auto;
-
-    outline:1px solid yellow;
 }
 .footer-site-navigation a{
     font-size: 18px;
@@ -282,7 +281,6 @@ h1 {
     width: 940px;
     margin: 0 auto;
 
-    outline:1px solid yellow;
 }
 .footer-site-navigation{
     display: flex;
@@ -296,7 +294,6 @@ h1 {
     width: 940px;
     margin: 0 auto;
 
-    outline:1px solid yellow;
 }
 .footer-offers-navigation{
     display: flex;
@@ -310,7 +307,6 @@ h1 {
     width: 940px;
     margin: 0 auto;
 
-    outline:1px solid yellow;
 }
  
 /* Что касается каталога*/
@@ -321,6 +317,11 @@ h1 {
     color:#000000;
 }
 .name-catalog-page{
+    display: flex;
+    width: 940px;
+    height:89px;
+    margin: 0 auto;
+
     font-size: 16px;
     line-height: 18px;
     color:#32425c;
@@ -350,12 +351,29 @@ h1 {
     display: flex;
     width: 940px;
     margin: 0 auto;
-
-    outline:1px solid yellow;
 }
+.catalog-wrapper{
+    display: flex;
 
+    width: 940px;
+    margin: 0 auto;
 
-
+    outline:1px solid #508534;
+}
+.filters {
+    display: flex;
+    flex-direction: column;
+    outline:1px solid black;
+}
+.sorting{
+    display:flex;
+    outline:1px solid black;
+}
+.catalog{
+    display:flex;
+    flex-wrap: wrap;
+    outline:1px solid red;
+}
 
 
 .catalog-item a{
@@ -366,4 +384,7 @@ h1 {
 }
 .big-map-popup {
     display: none;
+}
+.catalog-cart-popap{
+    display: none;   
 }
