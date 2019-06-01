@@ -1,3 +1,9 @@
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
 body {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
@@ -33,6 +39,7 @@ a {
 .footer-site-navigation a {
     color: #ffffff
 }
+
 .main-interactive-bar-wrapper {
     min-height: 42px;
     width: 100%;
@@ -40,30 +47,29 @@ a {
 }
 .main-interactive-bar {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 auto 46px auto;
-
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* margin: 0 auto 46px auto; */
+    margin: 0 auto;  
     width: 940px;
-    min-height: 42px;    
+    height: 42px;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
-
-    outline:2px solid yellow;
+    /* outline: 2px solid yellow; */
 }
 .main-interactive-bar .main-logo {
     font-size: 24px;
     line-height: 26px;
-    text-transform:uppercase;
-    padding:15px 55px; 
-    text-align: center; 
-   
-    min-height: 47px;    
-    background-color: #ed3543;  
-    box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.24); 
-    outline:2px solid green;      
+    text-transform: uppercase;
+    padding: 11px 55px;
+    /* margin-top: -1px; */
+    height: auto;
+    /* min-height: 47px; */
+    background-color: #ed3543;
+    box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.24);
+    /* outline: 2px solid green; */
 }
 .main-search input{
     
@@ -81,12 +87,22 @@ a {
   .main-search input::-moz-placeholder {color:#ffffff; opacity: 1;}
   .main-search input:-ms-input-placeholder {color:#ffffff;}
 
-.main-interactive-bar a{
+  .main-interactive-bar a {
+    display: block;
     font-size: 17px;
-    line-height: 18px;
+    /* width: 120px; */
+    /* line-height: 18px; */
+    /* height: 100%; */
+    height: 100%;
+    min-width: 159px;
+    padding: 0px 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-search input:focus{
     background-color: #ffffff;
+    color: #000;
     outline: none;
 }
 
@@ -117,12 +133,20 @@ a {
     background-color: #508534;
     opacity: 0.5;    
 }
-.main-header-wrapper{
+/* .main-header-wrapper{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
     width: 940px;
+} */
+.main-header-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 940px;
+    padding: 50px 0;
 }
 .site-navigation {
     display: flex;
@@ -161,6 +185,12 @@ h1 {
     font-style: italic;
 
     color: #EE3643;
+    /*  */
+    width: 100%;
+}
+.adress_wrapper {
+    width: 100%;
+    margin: 0 50px;
 }
 .main-phone {
     font-size: 21px;
@@ -168,6 +198,13 @@ h1 {
 
     color: #EE3643;
     border: 3px solid #ffffff;
+}
+.user-navigation {
+    width: 100%;
+}
+.login-list {
+    padding: 0;
+    display: flex;
 }
 .main-adress {
     width: 270px;
@@ -398,4 +435,22 @@ h1 {
 }
 .catalog-cart-popap{
     display: none;   
+}
+
+/*КОММЕНТАРИЙ*/
+
+.main-search {
+    width: 100%;
+    padding-left: 50px;
+}
+
+
+
+.main-search input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    color: #fff;
 }
