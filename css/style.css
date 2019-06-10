@@ -387,10 +387,11 @@ input::-webkit-search-results-decoration { display: none; }
     background-image: url("../img/icon-user.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-color: #000;
 }
 .user-profile-name:hover::before{
-
+    background-image: url("../img/icon-user-blue.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 .user-orders-link {
     padding-left: 20px;
