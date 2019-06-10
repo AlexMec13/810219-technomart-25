@@ -351,13 +351,76 @@ input::-webkit-search-results-decoration { display: none; }
 
     color: #32425C;
 }
-
+.nameplates{
+    display:flex;
+    width: 940px;
+    margin: 0 auto;
+}
 .nameplates-materials{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 0 auto;
+    margin: 60px 0px;
+    width:620px;
+}
+.materials{
+    width: 300px;
+    min-height:125px;
+    background-color: #ffbf47;
+}
+.instruments{
+    width: 300px;
+    min-height:125px;
+    background-color: #3bbce3;
+}
+.slider{
+    margin-top: 20px;
+}
+.nameplates-offers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 60px 0px 60px 20px;
+    width: 300px;
+}
+.equipment{
+    width: 300px;
+    min-height:125px;
+    background-color: #dc91d8;
+    ;
+}
+.sales{
+    width: 300px;
+    min-height:125px;
+    background-color: #8ed78f;
+}
+.shipment{
+    width: 300px;
+    min-height:125px;
+    background-color: #ffc047;
+}
+.popular-items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto 20px auto;
     width: 940px;
+    
+}
+.popular-items-head{
+    display: flex; 
+    width: 940px;
+    background-color: #f7f3ec;
+
+}
+.popular-items-list{
+    display: flex;
+    width: 100%;
+    
+
 }
 .user-actions{
     display: flex;
@@ -404,11 +467,22 @@ input::-webkit-search-results-decoration { display: none; }
     content: "";
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 260px;
     width: 20px;
     height: 20px;
     transform: translateY(-50%); 
-    background-image: url("../img/icon-user.png");
+    background-image: url("../img/icon-logout.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.user-profile-name:hover::after,
+.user-profile-name:focus::after{
+    background-image: url("../img/icon-logout-blue.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.user-profile-name:active::after{
+    background-image: url("../img/icon-logout.png");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
