@@ -368,6 +368,7 @@ input::-webkit-search-results-decoration { display: none; }
     width: 100%;
     flex-wrap: wrap;
 }
+
 .user-profile-name {
     position: relative;
     font-size: 21px;
@@ -384,13 +385,32 @@ input::-webkit-search-results-decoration { display: none; }
     width: 20px;
     height: 20px;
     transform: translateY(-50%); 
-    background-image: url("../img/icon-user.svg");
+    background-image: url("../img/icon-user.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-color: #000;
 }
-.user-profile-name:hover::before{
-
+.user-profile-name:hover::before,
+.user-profile-name:focus::before{
+    background-image: url("../img/icon-user-blue.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.user-profile-name:active::before{
+    background-image: url("../img/icon-user.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.user-profile-name::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%); 
+    background-image: url("../img/icon-user.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 .user-orders-link {
     padding-left: 20px;
@@ -411,6 +431,12 @@ input::-webkit-search-results-decoration { display: none; }
     color: #32425C;
     text-decoration: underline;
 }
+.user-profile-name a{
+    font-size: 21px;
+    line-height: 21px;
+    color: #000;
+    text-decoration: none;
+}
 .user-navigation a,
 .user-actions .user-profile-link a{
     font-size: 21px;
@@ -425,6 +451,10 @@ input::-webkit-search-results-decoration { display: none; }
 .user-actions a:active{
     color: #32425C;
     opacity:0.3;
+}
+.user-profile-name a:hover,
+.user-profile-name a:focus{
+    color: #000;
 }
 .company-contacts-wrapper{
     display: flex;
