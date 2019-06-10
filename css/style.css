@@ -38,39 +38,51 @@ a {
 }
 
 .main-interactive-bar-wrapper {
-    background-color: #293349;outline: 2px solid yellow;
+    background-color: #293349;
 }
 .main-interactive-bar {
     display: flex;
-    align-items: center;
     margin: 0 auto;  
     width: 940px;
     min-height: 42px;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
-    outline: 2px solid grey;
 }
 .main-interactive-bar .main-logo {
-    display: inline-flex;
+    margin-bottom: -5px; 
     width: 220px;
     font-size: 24px;
     line-height: 26px;
     text-transform: uppercase;
-    padding: 15px 55px;
+    padding: 10px 45px;
     background-color: #ed3543;
     box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.24);
-    outline: 2px solid green;
 }
-.main-search {
-    width: 100%;
+.main-search{
+    position: relative;
+    width: 270px;
 }
+.search-button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 50%;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    z-index: 1;
+
+}
+
 .main-search input{
     position: relative;
     width: 100%;
-    padding: 10px;
-    padding-left: 45px; 
-    height: 100%;
+    height: 100%; 
+    padding-left: 45px;
+    padding-right: 30px;
     color: #fff;    
     background-color: transparent;
     border:none;
@@ -78,18 +90,31 @@ a {
 .main-search:hover{
     background-color: #212a3a;
 }
-
+form:hover input + .search-button{
+    opacity: 1;
+}
+.main-search input:focus + .search-button path{
+    fill: #ee3643;
+}
+.main-search input:focus + .search-button{
+    opacity: 1;
+}
 .main-search input::placeholder {
     color: #ffffff;
   }
-  .main-search input::-webkit-input-placeholder {color:#ffffff;}
-  .main-search input::-moz-placeholder {color:#ffffff; opacity: 1;}
-  .main-search input:-ms-input-placeholder {color:#ffffff;}
+.main-search input::-webkit-input-placeholder {color:#ffffff;}
+.main-search input::-moz-placeholder {color:#ffffff; opacity: 1;}
+.main-search input:-ms-input-placeholder {color:#ffffff;}
+  	
+.main-search input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+.main-search input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
 
-  .main-interactive-bar a {
+.main-interactive-bar a {
     font-size: 17px;
-    line-height: 18px;
-    height: 100%;
     min-width: 159px;
     display: inline-flex;
     align-items: center;
@@ -110,16 +135,17 @@ a {
 }
 .main-bookmarks{
     position: relative;
-    padding-left: 45px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 15px;
 }
 .main-bookmarks::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 50%;
     left: 15px;
     width: 18px;
     height: 18px;
+    transform: translateY(-50%);
     background-image: url("../img/icon-bookmark.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -134,15 +160,17 @@ a {
 }
 .main-basket{
     position: relative;
-    padding-left: 60px;
+    padding-left: 50px;
+    padding-right: 30px;
 }
 .main-basket::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 50%;
     left: 25px;
     width: 18px;
-    height: 18px;
+    height: 19px;
+    transform: translateY(-50%); 
     background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -177,20 +205,20 @@ a {
 }
 .main-header-wrapper {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
     width: 940px;
-    padding: 50px 0;
+    padding: 42px 0;
    
 }
 .main-header-wrapper h1{
-    font-size: 17px;
+    font-size: 16px;
     line-height: 23px;
-    height: 100%;
-    min-width: 200px;
+    font-style: italic;
+    color: #EE3643;
+    width: 100%;
     margin:0;
-    padding: 0px 50px; 
+    padding: 0px 0px 0px 50px; 
     display: inline-flex;
 
 }
@@ -212,10 +240,11 @@ a {
 .main-phone::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 50%;
     left: 10px;
     width: 20px;
     height: 20px;
+    transform: translateY(-50%); 
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -224,8 +253,9 @@ a {
 .adress_wrapper address{
     font-size: 14px;
     line-height: 24px;
+    font-style: normal;
+    margin: 0px 15px;
     color: #32425c;
-    padding: 0 8px;
     
     display: inline-block;
 }
@@ -252,10 +282,11 @@ a {
 .login-link::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 50%;
     left: 10px;
     width: 20px;
     height: 20px;
+    transform: translateY(-50%); 
     background-image: url("../img/icon-login.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -302,15 +333,6 @@ a {
     background-color: #1d2739;
 }
 
-h1 {
-    font-size: 16px;
-    line-height: 23px;
-    font-style: italic;
-
-    color: #EE3643;
-    width: 100%;
-}
-
 .user-navigation {
     display:flex;
     width: 100%;
@@ -347,11 +369,28 @@ h1 {
     flex-wrap: wrap;
 }
 .user-profile-name {
+    position: relative;
     font-size: 21px;
     line-height: 21px;
     padding: 15px 0 15px 50px ;
     width: 100%;
     background-color: #fff;
+}
+.user-profile-name::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%); 
+    background-image: url("../img/icon-user.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #000;
+}
+.user-profile-name:hover::before{
+
 }
 .user-orders-link {
     padding-left: 20px;
@@ -501,7 +540,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-top: 30px;
 }
 .footer-side-information{
     display: flex;
@@ -615,7 +653,21 @@ h1 {
     width:100%;
     
 }
+.visually-hidden{
+    position: absolute;
 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .catalog-item a{
     display:none;
