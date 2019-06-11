@@ -400,6 +400,19 @@ input::-webkit-search-results-decoration { display: none; }
 .nameplates button:active{
     opacity: 0.3; 
 }
+.materials p:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 210px;
+    width: 44px;
+    height: 65px;
+    transform: translateY(-50%); 
+    background-image: url("../img/paint-jar.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+}
 .materials .flag{
     position: absolute;
     top: 0px;
@@ -414,9 +427,23 @@ input::-webkit-search-results-decoration { display: none; }
     background: url("../img/new-flag.png") no-repeat 0 0;
 }
 .instruments{
+    position: relative;
     width: 300px;
     min-height:125px;
     background-color: #3bbce3;
+}
+.instruments p:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 195px;
+    width: 75px;
+    height: 61px;
+    transform: translateY(-50%); 
+    background-image: url("../img/drill.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
 }
 .slider{
     margin-top: 20px;
@@ -431,20 +458,59 @@ input::-webkit-search-results-decoration { display: none; }
     width: 300px;
 }
 .equipment{
+    position: relative;
     width: 300px;
     min-height:125px;
     background-color: #dc91d8;
     ;
 }
+.equipment p:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 190px;
+    width: 78px;
+    height: 62px;
+    transform: translateY(-50%); 
+    background-image: url("../img/tractor.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
 .sales{
+    position: relative;
     width: 300px;
     min-height:125px;
     background-color: #8ed78f;
 }
+.sales p:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 195px;
+    width: 59px;
+    height: 72px;
+    transform: translateY(-50%); 
+    background-image: url("../img/cort.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
 .shipment{
+    position: relative;
     width: 300px;
     min-height:125px;
     background-color: #ffc047;
+}
+.shipment p:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 190px;
+    width: 78px;
+    height: 63px;
+    transform: translateY(-50%); 
+    background-image: url("../img/truck.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 .popular-items{
     display: flex;
