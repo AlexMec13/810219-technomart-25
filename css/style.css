@@ -365,9 +365,53 @@ input::-webkit-search-results-decoration { display: none; }
     width:620px;
 }
 .materials{
+    position: relative;
     width: 300px;
     min-height:125px;
     background-color: #ffbf47;
+}
+.nameplates p{
+    font-size: 24px;
+    line-height: 30px;
+    color:#fff;
+    margin-left: 20px;
+    margin-top:20px;
+}
+.nameplates button {
+    border:none;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    width:135px;
+    height:38px;
+    margin-left:24px;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.1;
+    border-radius: 3px;
+
+}
+.nameplates button:hover,
+.nameplates button:focus{
+    opacity: 0.2; 
+}
+.nameplates button:active{
+    opacity: 0.3; 
+}
+.materials .flag{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+.materials .flag-new {
+    background: url("../img/new-flag.png") no-repeat 0 0;
 }
 .instruments{
     width: 300px;
@@ -724,10 +768,133 @@ input::-webkit-search-results-decoration { display: none; }
 .sorting-catalog-wrapper {
     display: flex;
     flex-wrap: wrap;
+    width: 700px;
 }
 .catalog-list {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 20px auto;
+}
+.catalog-item{
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+  
+    border: 1px solid #ccc;
+}
+.catalog-item .flag{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+.catalog-item .flag-new {
+    background: url("../img/new-flag.png") no-repeat 0 0;
+}
+.catalog-item img{
+    max-width: 100%;
+}
+.catalog-item h3 {
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.catalog-item .discount {
+    min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+    color: #999;
+    text-decoration: line-through;
+}
+.catalog-item .price {
+    position: relative;
+    width: 140px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
+}
+.catalog-item .price:after {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    right: -20px;
+    
+    width: 0;
+    height: 0;
+    
+    border: 20px solid white;
+    border-left-color: #ee3643;
+}
+
+.catalog-item-actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 218px;
+    height: 150px;
+    padding: 40px 0;
+  
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
+}
+.catalog-item-actions .button-buy,
+.catalog-item-actions .button-bookmarks{
+    display: block;
+    width: 129px;
+     margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+  
+    background-color: #63a63e;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315;
+    border-radius:3px;
+  
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Cuprum", sans-serif;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.catalog-item-actions .button-bookmarks{
+    color: #32425c;
+    background: white;
+    border-color: #63a63e;
+}
+.catalog-item-actions {
+    display: none;
+}
+.catalog-item:hover .catalog-item-actions {
+    display: block;
+}
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+.catalog-list {
+    font-size: 0;
+  }
+  
+.catalog-item {
+    font-size: 16px;
 }
 .filters {
     display: flex;
@@ -750,13 +917,6 @@ input::-webkit-search-results-decoration { display: none; }
     font-size: 13px;
     line-height: 18px;
 }
-.catalog-list{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width:100%;
-    
-}
 .visually-hidden{
     position: absolute;
 
@@ -773,9 +933,7 @@ input::-webkit-search-results-decoration { display: none; }
     overflow: hidden;
 }
 
-.catalog-item a{
-    display:none;
-}
+
 .write-us-popup {
     display: none;
 }
