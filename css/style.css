@@ -523,14 +523,101 @@ input::-webkit-search-results-decoration { display: none; }
 .popular-items-head{
     display: flex; 
     width: 940px;
+    margin-bottom: 20px;
     background-color: #f7f3ec;
-
+}
+.popular-items-head p {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    margin: 30px;
+}
+.popular-items-head button{
+    border:none;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 18px;
+    color:#fff;
+    width: 253px;
+    height:38px;
+    padding: 0px;
+    margin:30px 20px 30px 330px;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    border-radius: 3px;
 }
 .popular-items-list{
     display: flex;
     width: 100%;
-    
+    margin-bottom: 20px;
+}
+.popular-item{
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+  
+    border: 1px solid #ccc;
+}
+.popular-item .flag{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+.popular-item .flag-new {
+    background: url("../img/new-flag.png") no-repeat 0 0;
+}
+.popular-item img{
+    max-width: 100%;
+}
+.popular-item h3 {
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.popular-item .discount {
+    min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+    color: #999;
+    text-decoration: line-through;
+}
+.popular .price {
+    position: relative;
+    width: 140px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
+}
+.popular-item .price:after {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    right: -20px;
+    
+    width: 0;
+    height: 0;
+    
+    border: 20px solid white;
+    border-left-color: #ee3643;
 }
 .user-actions{
     display: flex;
