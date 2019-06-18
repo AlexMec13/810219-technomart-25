@@ -5,10 +5,9 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
-
     background-color: #ffffff;    
 }
 a {
@@ -659,8 +658,38 @@ input::-webkit-search-results-decoration { display: none; }
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 85px;
 }
+.popular-producers-list a{
+    width: 220px;
+    height: 142px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 1px solid #eaeaea;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.popular-producers-list a:nth-child(4n){
+    margin-right: 0;
+}
+.services {
+    height:100%;
+    background-color: #ffffff;
+    background-image: url("../img/background-blue.png");
+    background-repeat: repeat;
+}
+.services-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;  
+    width: 940px;
+}
+.services-description {
+    display: flex;
+    width: 100%;
+}
+
 .user-actions{
     display: flex;
     width: 100%;
