@@ -50,7 +50,7 @@ a {
 }
 .main-interactive-bar .main-logo {
     margin-bottom: -5px; 
-    width: 220px;
+    width: 239px;
     font-size: 24px;
     line-height: 26px;
     text-transform: uppercase;
@@ -114,7 +114,6 @@ input::-webkit-search-results-decoration { display: none; }
 
 .main-interactive-bar a {
     font-size: 17px;
-    min-width: 159px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
